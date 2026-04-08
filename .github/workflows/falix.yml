@@ -42,7 +42,7 @@ jobs:
           fi
           
           echo "[INFO] 配置 Hysteria2 代理"
-          wget -q https://github.com/oyz6/action/releases/download/proxy/hysteria-linux-amd64 -O hysteria
+          wget -q https://github.com/apernet/hysteria/releases/latest/download/hysteria-linux-amd64 -O hysteria
           chmod +x hysteria
           
           URL="${HY2_URL#hysteria2://}"
