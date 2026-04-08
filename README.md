@@ -59,7 +59,7 @@ user@domain.com-----another_password
 
 ```bash
 curl -X POST \
-  -H "Authorization: token YOUR_GITHUB_TOKEN" \
+  -H "Authorization: Bearer ghp_XXXXXXXXXXXXXXXXXXXXXXXXX" \
   -H "Accept: application/vnd.github.v3+json" \
   https://api.github.com/repos/你的用户名/你的仓库名/actions/workflows/falix.yml/dispatches \
   -d '{"ref":"main"}'
@@ -69,9 +69,9 @@ curl -X POST \
 
 ```bash
 curl -X POST \
-  -H "Authorization: token YOUR_GITHUB_TOKEN" \
+  -H "Authorization: Bearer ghp_XXXXXXXXXXXXXXXXXXXXXXXXX" \
   -H "Accept: application/vnd.github.v3+json" \
-  https://api.github.com/repos/你的用户名/你的仓库名/actions/workflows/falix.yml/dispatches \
+  https://api.github.com/repos/oyz8/FalixNodes/actions/workflows/Falix_Restart.yml/dispatches \
   -d '{
     "ref": "main",
     "inputs": {
@@ -84,9 +84,9 @@ curl -X POST \
 
 ```bash
 curl -X POST \
-  -H "Authorization: token YOUR_GITHUB_TOKEN" \
+  -H "Authorization: Bearer ghp_XXXXXXXXXXXXXXXXXXXXXXXXX" \
   -H "Accept: application/vnd.github.v3+json" \
-  https://api.github.com/repos/你的用户名/你的仓库名/actions/workflows/falix.yml/dispatches \
+  https://api.github.com/repos/oyz8/FalixNodes/actions/workflows/Falix_Restart.yml/dispatches \
   -d '{
     "ref": "main",
     "inputs": {
